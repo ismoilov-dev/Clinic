@@ -40,3 +40,5 @@ async def chat_stream(message: str):
         system=ASSISTANT_SYSTEM_PROMPT,
     ):
         yield event
+    
+# async def metrics(message: str):

@@ -29,3 +29,7 @@ async def stream(request: ChatRequest):
             "X-Accel-Buffering": "no",
         },
     )
+
+@app.get("/metrics")
+async def get_metrics():
+    return metrics_store.summary()
